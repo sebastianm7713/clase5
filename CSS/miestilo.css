@@ -1,0 +1,56 @@
+h1{color: black;font-size: 50px;margin: 0; padding: 0px;}
+
+header,footer{background-color: rgb(62, 206, 234);}
+
+footer{color: blue;}
+article p span{ font-size: xx-large; /* selectores descendentes */
+color: mediumblue;  /*color de la letra */
+font-family: tahoma ; /*tipo de letra*/
+font-weight: bold;  /*grosor de la letra */
+                }
+/*selector de clase*/
+.miclase{background-color: aqua;}
+/*selector de tipo id*/
+#menu{background-color: cornflowerblue; color: navy;}
+/*selector adyacente*/
+h1+p {
+    text-decoration: underline;
+}
+#mip{ 
+    text-decoration: none;}
+/*selector seudocodigo */
+.mia:hover, .mib:hover  {
+    background-color: darkgoldenrod;
+    color:forestgreen;}
+.mia:visited .mib:link{
+    background-color: blue;
+    color: deepskyblue;
+}
+img:hover{
+    opacity:0 ; /*para ocultar la imagen pero que quede el espacio*/}
+
+
+p::first-letter{     /*seudoelementos*/
+    color: blue;
+    font-size: xx-large;
+
+
+}
+footer p::first-letter{
+    color: blue;
+    font-size: xx-large;
+}
+footer::before{content: url(/img/descarga.jfif);} /*añadir otra imagen*/
+
+footer::first-line{
+    color: gold;
+    font-size: 35px;
+}
+.i{
+    display:none ;
+}
+@font-face { /* cambiar la letra*/
+    font-family: clase5;
+    src: url(/static/Teko-Bold.ttf);
+}
+*{ font-family: clase5 ; }
